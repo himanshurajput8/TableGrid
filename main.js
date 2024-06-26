@@ -239,7 +239,7 @@ function sortData(event) {
           };
       }
   })
-  renderTbody(sortedData);
+  renderTbody(sortedData); 
 }
 
 // add new
