@@ -1,6 +1,6 @@
 import './style.css'
 var fulltableData = [
-  {Name: 'himanshu',Position: 'Developer',Age: '22',Date: '4-5-24',Salary: '20000',},
+  {NAME: 'himanshu',POSITION: 'Developer',AGE: '22',DATE: '4-5-24',SALARY: '20000',},
   {name: 'Nishant',position: 'Accountant',age: '24',date: '1-5-24',salary: '25000',},
   {name: 'Sujal',position: 'Engineer',age: '22',date: '3-5-24',salary: '15000',},
   {name: 'Amit',position: 'Assistant',age: '23',date: '2-5-24',salary: '25000',},
@@ -36,7 +36,7 @@ var fulltableData = [
 ]
 
 var itemsPerPage = 8;
-var currentPage = 1;
+var currentPage = 2;
 var totalPages = Math.ceil(fulltableData.length / itemsPerPage);
 
 var tbody = document.createElement('tbody');
@@ -57,7 +57,7 @@ function renderTableHeader(fulltableData) {
       tableHeaderRow.appendChild(th)
   })
   var th = document.createElement('th')
-  th.textContent = 'action';
+  th.textContent = 'ACTION';
   tableHeaderRow.appendChild(th)
 }
 // render action
@@ -200,7 +200,7 @@ function filterTable(searchText) {
           return value.includes(searchText);
       })
   })
-  console.log(filterData);
+  console.log(filterData); 
   var tableBody = document.querySelector('.tbody')
   console.log(tableBody, 'hello')
   tableBody.innerHTML = "";

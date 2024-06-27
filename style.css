@@ -25,10 +25,10 @@ input[type="search"]{
   border: 1px solid #ccc;  
 }
 .search-div button{
-  padding: 5px 15px ;
+  padding: 8px 15px ;
   border-radius: 20px;
   border: none;
-  background-color: red;
+  background-color: green;
   color: white;
   font-weight: bold;    
 } 
@@ -40,16 +40,20 @@ table {
  
 }
 .deleteBtn{    
-  color: red;
+  color: black;
   padding: 3px;
-  font-weight: bold;
-  font-size: x-large;
+  font-weight: bold;  
+  padding: 4px 7px;
+  margin-left: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc; 
 }
 .editBtn{
-  color: green;
-  padding: 3px;
+  color: white;
+  padding: 4px 7px ;
   font-weight: bold;
-  font-size: x-large;
+  border-radius: 3px;
+  background-color: green;  
 
 }
 
@@ -66,7 +70,9 @@ td:hover{
 
 th {
   cursor: pointer;
-  background-color: rgb(229, 227, 227);
+  color: white;
+  font-weight: bold;
+  background-color: black;
 }
 
 .icon {
@@ -88,10 +94,14 @@ th {
   border: 1px solid #ccc;
   cursor: pointer;
   border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .pagination button.active{
-  background-color: #007bff; 
+  background-color: green; 
   color: white;
+  transform: scale(1.3);
 
 }
